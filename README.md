@@ -18,7 +18,9 @@ ainda esta no projeto inicial e fique a vontade para contribuir.
     (Por questões didáticas deixei os comandos manuais para serem executados em outra aba do terminal).
     - docker-compose run website rails db:create
     - docker-compose run website rails db:migrate
-    - docker-compose run website rails db:seed
+    - docker-compose run website rails db:seed 
+    ou 
+    - docker-compose run website rails db:setup
   
 ## Estrutura
 - appService
