@@ -1,0 +1,45 @@
+extends partials/layout
+
+block content
+  md-content(layout-padding='', layout='row', layout-align='center')
+    div(flex-gt-md='100', flex-md='80', flex-xs='100')
+      include partials/filter
+      #test(grid-data='', grid-options='gridOptions', grid-actions='gridActions')
+        include partials/pagination
+        div
+          table.mdl-data-table.mdl-js-data-table.mdl-data-table--selectable.mdl-shadow--2dp
+            thead
+              tr
+                th.sortable(sortable='name_dog')
+                  span Pet #
+                th.sortable(sortable='name_dog')
+                  span Gênero #
+                th.sortable(sortable='breed.name')
+                  span Raça #
+                th.st-sort-disable.th-dropdown
+                  md-select(filter-by='castrado', filter-type='select', ng-model='status', placeholder='Castrado', ng-change='filter()')
+                    md-option(value='') Ambos
+                    md-option(ng-repeat='option in statusOptions track by option.value', value='{{option.value}}')
+                      | {{option.text}}
+
+                th.sortable(sortable='nome_dono ')
+                    span Dono #
+                th.sortable(sortable='telefone')
+                    span Telefone # 
+                th.sortable(sortable='nascimento')
+                    span Nascimento # 
+                th.sortable(sortable='ultima_visitas')
+                    span Última Consulta #    
+                
+            tbody
+              tr(grid-item='')
+                td(ng-bind='item.dog')
+                td(ng-bind='item.genero')
+                td(ng-bind='item.breed.name')
+                td(ng-bind='item.castrado')  
+                td(ng-bind='item.nome_dono')
+                td(ng-bind='item.telefone')
+                td(ng-bind="item.data_de_nascimento | date:'dd/MM/yyyy'")
+                td(ng-bind="item.ultima_visitas | date:'dd/MM/yyyy'")
+
+        include partials/pagination

@@ -1,0 +1,9 @@
+doctype html
+html(ng-app='myApp')
+    include head
+    body(ng-controller='myAppController', ng-cloak='')
+      div(layout='column', layout-fill='')
+        include nav    
+        block content
+script(src='js/app.js')
+  
