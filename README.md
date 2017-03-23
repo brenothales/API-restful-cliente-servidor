@@ -10,6 +10,7 @@ ainda esta no projeto inicial e fique a vontade para contribuir.
 
 ## Subir o Servidor
   - É necessário que tenha o docker e docker-composse instalado
+    - Entre no diretório cd appService/
     - docker-compose build (Instalar o postgresql e dependências necessários)
     - docker-compose up (Instala bundle install )
 
