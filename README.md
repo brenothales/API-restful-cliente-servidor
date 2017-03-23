@@ -13,7 +13,7 @@ ainda esta no projeto inicial e fique a vontade para contribuir.
     - docker-compose build (Instalar o postgresql e dependências necessários)
     - docker-compose up (Instala bundle install )
 
-## Criar Migrar e popular o banco (Por questões didáticas deixei os comandos manuais para serem executados )
+## Criar Migrar e popular o banco (Por questões didáticas deixei os comandos manuais para serem executados em outra aba do terminal).
     - docker-compose run website rails db:create
     - docker-compose run website rails db:migrate
     - docker-compose run website rails db:seed
@@ -73,6 +73,12 @@ ainda esta no projeto inicial e fique a vontade para contribuir.
   - Angular-DataGrid
   - Sass
   - JS
+
+  ## Subir o Cliente
+    - Entrar na diretório
+      - cd frontend/
+    - npm install 
+    - gulp && gulp serve  
   
   -frontend
     - app
@@ -89,8 +95,8 @@ ainda esta no projeto inicial e fique a vontade para contribuir.
     - public --> Arquivos Estático
       - css
       - js
-        - app.js   --> Arquivos js compilados em único local
-      - index.html --> Arquivos para compilado
+        - app.js   --> Arquivos javaScript compilados em único local
+      - index.html --> Arquivo para compilado
     - gulpfile.js  --> Tarefas
     - package.json
  
