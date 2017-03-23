@@ -24,30 +24,30 @@ ainda esta no projeto inicial e fique a vontade para contribuir.
       - channels/application_cable
       - controllers
         - api/v1
-          - breeds_controller.rb
-          - dogs_controller.rb
+          - breeds_controller.rb --> Controller index para raça do animais
+          - dogs_controller.rb   --> Controller index para dogs 
         - concerns
         - application_controller.rb
           - breeds_controller.rb
           - dogs_controller.rb
       - jobs
       - mailers
-      - models
+      - models --> Com validações e relacionamentos
       - views
         - api/v1
           - breeds
-            - index.json.jbuilder
+            - index.json.jbuilder --> Estrutura do JSON raças customizada 
           - dogs
-           - index.json.jbuilder
+           - index.json.jbuilder --> Estrutura do JSON dogs customizada 
         - layouts
     - bin
     - config
     - db
       - migrate
-        - 20170317190448_create_breeds.rb
-        - 20170318002452_create_dogs.rb
+        - 20170317190448_create_breeds.rb --> Arquivo de migrações da raça
+        - 20170318002452_create_dogs.rb --> Arquivo de migrações do dog
         - schema.rb
-        - seeds.rb
+        - seeds.rb --> arquivos de popularizar o banco 
     - lib/tasks
     - log
     - public
@@ -55,14 +55,43 @@ ainda esta no projeto inicial e fique a vontade para contribuir.
     - test
     - .dockerignore
     - .gitignore
-    - Dockerfile
+    - Dockerfile --> arquivo de configuração do container 
     - Gemfile
     - Gemfile.lock
     - README.md
     - Rakefile
     - config.ru
-    - docker-compose.yml
+    - docker-compose.yml arquivo de configuração do docker-compose
 
-## Front-end    
+## Front-end
+- Ferramentas
+  - Angularjs
+  - Materialize-Design
+  - Node
+  - Gulp
+  - Pug
+  - Angular-DataGrid
+  - Sass
+  - JS
+  
+  -frontend
+    - app
+      - app.js --> Angularjs
+      - dataGrid.js
+    - assets/jade  --> Arquivos para desenvolvimento
+      - partials
+        - filter.pug
+        - head.pug
+        - layout.pug
+        - nav.pug
+        - pagination.pug
+      - index.pug
+    - public --> Arquivos Estático
+      - css
+      - js
+        - app.js   --> Arquivos js compilados em único local
+      - index.html --> Arquivos para compilado
+    - gulpfile.js  --> Tarefas
+    - package.json
  
   
