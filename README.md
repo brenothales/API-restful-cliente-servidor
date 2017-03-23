@@ -101,5 +101,9 @@ ainda esta no projeto inicial e fique a vontade para contribuir.
       - index.html --> Arquivo para compilado
     - gulpfile.js  --> Tarefas
     - package.json
- 
-  
+
+# Implementações Futuras
+  - Criar e melhoras mais filtros 
+  - Restringir nos números de requisições de acesso ao sevidor
+  - Implantar cache na api para aumentar a perfomace
+  
