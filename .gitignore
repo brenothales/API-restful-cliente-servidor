@@ -1,5 +1,5 @@
 /frontend/node_modules/*
-
+.gitignore
 # Ignore Node files
 node_modules/**
 
