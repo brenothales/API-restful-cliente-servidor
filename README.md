@@ -15,7 +15,7 @@ ainda esta no projeto inicial e fique a vontade para contribuir.
     - docker-compose up (Instala bundle install )
 
 ## Criar Migrar e popularizaer o Banco de Dados
-    (Por questões didáticas deixei os comandos manuais para serem executados em outra aba do terminal).
+  (Por questões didáticas deixei os comandos manuais para serem executados em outra aba do terminal).
     - docker-compose run website rails db:create
     - docker-compose run website rails db:migrate
     - docker-compose run website rails db:seed 
@@ -24,7 +24,7 @@ ainda esta no projeto inicial e fique a vontade para contribuir.
   
 ## Estrutura
 - appService
-    app
+   - app
       - channels/application_cable
       - controllers
         - api/v1
